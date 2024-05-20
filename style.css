@@ -72,6 +72,7 @@ body{
     background-color: transparent;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
+    z-index: 20px;
 }
 /* panel-1 */
 .panel-1{
@@ -351,39 +352,14 @@ footer{
 }
 
 
-/* designing background */
-.back{
-    width: 100vw;
+/* designing cursor */
+.curso{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
 }
-.bg{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.row {
-    width: 300px;
-    height: 300px;
-    position: relative;
-}
-.row::after {
-    content: "";
-    position: absolute;
-    top: calc(var(--y, 0) * 1px - 50px);
-    left: calc(var(--x, 0) * 1px - 50px);
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-    background: radial-gradient(#f9ffde,#68cff8,#060237 90%);
-    box-shadow: 50px #f9ffde;
-    transition: opacity 1s;
-    border-radius: 40%;
-    z-index: +10;
-}
-.row:hover::after {
-    opacity: 0.20;
-    z-index: +10;
-}
+
 
 /* adding media querry */
 @media(max-width: 700px) {
